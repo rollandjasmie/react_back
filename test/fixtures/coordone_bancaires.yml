@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  numero: 1
+  mois: 1
+  year: 1
+  CVC: 1
+  reference: 
+
+two:
+  numero: 1
+  mois: 1
+  year: 1
+  CVC: 1
+  reference: 

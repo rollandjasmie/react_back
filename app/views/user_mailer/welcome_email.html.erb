@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitaion</title>
+</head>
+
+<body>
+    <h1>
+    </h1>
+    <h2>
+        <%= @current_user.first_name %> <%= @current_user.name %> vous a invité à collaborer sur Son logement
+    </h2>
+    <p>
+        Vous pouvez accepter ou refuser cette invitation. Vous pouvez également vous rendre sur <a href="<%=ENV["CLIENT_URL"]%><%=@logement%>/detail">le logement</a> pour consulter le logement pour en savoir un peu plus .
+    </p>
+    <p>
+        Cette invitation expirera dans 2 jours.
+    </p>
+    <p>
+        Afficher l'invitation<br />
+        Remarque: Cette invitation était destinée à : <%= @user.email %>.<br />
+        Si vous n'attendiez pas cette invitation, vous pouvez ignorer cet e-mail.
+    </p>
+    <p>
+        Vous obtenez une erreur 404? Assurez-vous que vous êtes connecté en tant que <%= @user.email %> .
+    </p>
+        <a href="<%=ENV["CLIENT_URL"]%>invitaion/cogestionaire/<%= Time.new%>/<%=Base64.encode64(@user.id.to_s)%>/<%=Base64.encode64(@logement.to_s)%>/<%=Base64.encode64((Date.today+2).to_s)%>">Accepter</a> .
+</body>
+
+</html>

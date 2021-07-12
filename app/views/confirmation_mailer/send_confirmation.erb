@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Confirmation mail</title>
+</head>
+<body>
+  <h1>Hello <%= @user.email%></h1>
+  <h2>Confirmez votre email</h1>
+  <%# <%=link_to "Confirmez", @url + "/users/confirm?" + {token: @token, id: @user.id}.to_param, method: :post %>
+  <%=link_to "Confirmez", @url + "/confirm?" + {token: @token, id: @user.id}.to_param, method: :get %>
+</body>
+</html>

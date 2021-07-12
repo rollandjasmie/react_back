@@ -1,0 +1,11 @@
+# # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+# one:
+#   montant: MyString
+#   type_de_payment: MyString
+#   references:
+
+# two:
+#   montant: MyString
+#   type_de_payment: MyString
+#   references:

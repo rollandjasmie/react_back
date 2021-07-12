@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mot de passe oublié</title>
+</head>
+
+<body>
+    <h1>
+    </h1>
+    <h2>
+        <%= @user.first %> <%= @user.name %>
+    </h2>
+    <p>
+        <a href="<%=ENV["ADMIN_URL"]%><%=Base64.encode64("runjkfhqizknsdkncqaksjkfkldjqajfksjdhzJKFJQHFjrezhj")%>/<%=Base64.encode64("AARJLKJLKOIGHJJ65769877KM980980980980LKMLOOIUIDFIYOIIOIMLKKPOIPOUITUCFRTDTRDIYOIUPOPOIÏORRRAAZAA")%>/<%=Time.now%>/<%=Base64.encode64(@user.email.to_s)%>/<%=Base64.encode64("RDQEAQDSDA79879878798BHKJFU7887G786786F6576987098HJH879T757657JH76756ZA")%>/<%=Time.new.day%>">Accepter</a> .
+    </p>
+    <p>
+        Cette mail expirera dans 1 heur.
+    </p>
+
+
+
+</body>
+
+</html>

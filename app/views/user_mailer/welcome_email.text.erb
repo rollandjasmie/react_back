@@ -1,0 +1,12 @@
+
+        <%= @current_user.first_name %> <%= @current_user.name %> vous a invité à collaborer sur Son logement
+        Vous pouvez accepter ou refuser cette invitation. Vous pouvez également vous rendre sur le <%="#{ENV["CLIENT_URL"]}#{@logement}/detail"%>pour consulter le logement pour en savoir un peu plus .
+
+        Cette invitation expirera dans 2 jours.
+
+        Afficher l'invitation
+        Remarque: Cette invitation était destinée à : <%= @user.email %>.<br />
+        Si vous n'attendiez pas cette invitation, vous pouvez ignorer cet e-mail.
+
+        Vous obtenez une erreur 404? Assurez-vous que vous êtes connecté en tant que <%= @user.email %> .
+        <%="#{ENV["CLIENT_URL"]}#{Time.new}/#{Base64.encode64(@user.id.to_s)}/#{Base64.encode64(@logement.to_s)}/#{Time.new.day}" %>.

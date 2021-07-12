@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenue</title>
+</head>
+
+<body>
+    <h1>
+        Runbnb : Trouver vite ce dont vous avez besoin!
+    </h1>
+    <h2>
+        Bienvenue <%= @user.name %> <%= @user.first_name %>!
+    </h2>
+    <p>
+        Bonne nouvelle, votre inscription à notre site Runbnb vien d'être validée.<br>
+        Toute l'équipe Runbnb est heureuse de vous compter parmi ses abonnés.
+    </p>
+    <p>
+        Tu t'es inscrit sur le site d'annonce Runbnb en utilisant l'e-mail suivant : <%= @user.email %>.
+    </p>
+    <p>
+        D'ici là nous vous invitons à découvrir les dernières nouveautés de notre produits <a href="<%= @url %>"><%= @url %></a> .
+    </p>
+    <p>
+        À bientôt,<br>
+        L'équipe de Runbnb &hellip;
+    <p>
+
+
+</body>
+
+</html>

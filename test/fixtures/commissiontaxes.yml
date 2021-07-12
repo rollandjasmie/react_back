@@ -1,0 +1,11 @@
+# # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+# one:
+#   commission: 1
+#   tax: 1
+#   references:
+
+# two:
+#   commission: 1
+#   tax: 1
+#   references:

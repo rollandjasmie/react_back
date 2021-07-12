@@ -1,0 +1,21 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  arrivee: 2020-12-08 15:41:57
+  depart: 2020-12-08 15:41:57
+  status: MyString
+  commission: 1
+  duree: 1
+  montan_total: MyString
+  commition_et_frais: 1
+  tarif: 1
+
+two:
+  arrivee: 2020-12-08 15:41:57
+  depart: 2020-12-08 15:41:57
+  status: MyString
+  commission: 1
+  duree: 1
+  montan_total: MyString
+  commition_et_frais: 1
+  tarif: 1
